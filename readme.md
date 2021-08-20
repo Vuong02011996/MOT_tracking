@@ -1,3 +1,4 @@
+ 
 # Phân tích vấn đề.
 
 + Object tracking là bài toán theo dõi một hoặc nhiều đối tượng chuyển động theo thời gian trong một video.
@@ -89,8 +90,6 @@ sau đó lấy ra phương án tối ưu là vị trí chứa các phần tử 0
     >>> row_ind, col_ind = linear_sum_assignment(cost)
     >>> col_ind
     array([1, 0, 2])
-    >>> cost[row_ind, col_ind].sum()
-    5
     ```
 
 ### 2. Bộ lọc Kalman(kalman Filter)
@@ -107,7 +106,7 @@ sau đó lấy ra phương án tối ưu là vị trí chứa các phần tử 0
    4. Covariance and Covariance matrix
    5. Likehood, Maximum Likehood Estimate(MLE).
    6. Eigenvector and eigenvalue.(covariance matrix-COV)
-   7. Normal Distribution(Gauss) - PDF (Ham mat do xac suat) - 69.3; 95.7; 97.5.
+   7. Normal Distribution(Gauss) - PDF (Ham mat do xac suat) - 68.3; 95.7; 97.5.
    8. Measurement, estimate, update, accuracy, predict, precision, ...
    9. Error(uncertainly): measurement error(r), estimate error(p), 
    10. FIVE Kalman Filter Equation
@@ -152,10 +151,17 @@ Mô hình :
 
 # How to submission to MOT challenge 
     
-[link](https://motchallenge.net/instructions/)
-[code to create file zip to submiss](https://github.com/mhnasseri/sort_oh/blob/main/tracker_app.py)
++ [link](https://motchallenge.net/instructions/)
++ [code to create file zip to submiss](https://github.com/mhnasseri/sort_oh/blob/main/tracker_app.py)
 
 
-
+# Ý tưởng 
++ Sườn code , thuật toán Kalman Filter và Hungary từ SORT [link](https://github.com/abewley/sort)
++ Quản lí vòng đời track bằng các trạng thái từ deep sort [link](https://github.com/nwojke/deep_sort)
++ Thêm trạng thái track tắt ngẵn (occluded) và mở rộng bouing box của những track tắt ngẽn nhằm kết nối lại với 
+những detection tiếp theo. Để giảm ID switch và Fragment track. [link](https://github.com/mhnasseri/sort_oh),
+[paper](mot_sort/2103.04147.pdf)
++ Thêm ý tưởng những track mới bị tắt ngẵn time_since_update <= 2 nếu kết hợp với detections mới thì phải có ngưỡng IoU 
+cao hơn bình thường (0.15-case error 1) [link](https://github.com/Vuong02011996/MOT_tracking/blob/2f5a39415663912eb8d04f7fb25110a6969c7326/mot_sort/hungrary_linear_assignment.py#L85)
   
 

@@ -53,7 +53,7 @@ docs/_build/
 .idea/
 task.md
 
-*.pdf
 mot_sort/data/
-mot_sort/data_submit
+mot_sort/data_submit/
+mot_sort/Case_error/
 

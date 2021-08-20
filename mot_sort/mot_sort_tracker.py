@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
-from new_core.mot_sort.hungrary_linear_assignment import associate_detections_to_trackers, iou_batch, linear_assignment
-from new_core.mot_sort.kalman_filters import KalmanBoxTracker
-from new_core.mot_sort.untils_track import extend_bbox, iou, draw_track_bbs_and_det_bbs_to_image
+from mot_sort.hungrary_linear_assignment import associate_detections_to_trackers, iou_batch, linear_assignment
+from mot_sort.kalman_filters import KalmanBoxTracker
+from mot_sort.untils_track import extend_bbox, iou, draw_track_bbs_and_det_bbs_to_image
 import matplotlib.pyplot as plt
 import matplotlib
 

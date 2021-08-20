@@ -8,7 +8,7 @@ from mot_sort.mot_sort_tracker import Sort
 from mot_sort import untils_track
 
 
-y5_model = Y5Detect(weights="../new_core/yolov5_detect/model_head/y5headbody_v2.pt")
+y5_model = Y5Detect(weights="../test_track_with_yolov5/model_head/y5headbody_v2.pt")
 class_names = y5_model.class_names
 mot_tracker = Sort(class_names)
 

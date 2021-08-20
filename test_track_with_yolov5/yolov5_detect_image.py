@@ -1,9 +1,9 @@
 
 import torch
 import numpy as np
-from new_core.yolov5_detect.models.experimental import attempt_load
-from new_core.yolov5_detect.utils.general import check_img_size, non_max_suppression, scale_coords
-from new_core.yolov5_detect.utils.datasets import letterbox
+from test_track_with_yolov5.models.experimental import attempt_load
+from test_track_with_yolov5.utils.general import check_img_size, non_max_suppression, scale_coords
+from test_track_with_yolov5.utils.datasets import letterbox
 import cv2
 from glob import glob
 
