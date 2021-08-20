@@ -24,16 +24,16 @@
     + Recall: tổng số lượng đối tượng phát hiện
     + ID Switches: Tổng số 1 lần đối tượng bị gán cho ID mới trong suốt quá trình tracking video.
     + MOTA. Mutiple Object Tracking Accuracy
-      + ![](MOTA.png)
+      + ![](image/MOTA.png)
     + MOTP.  Mutiple Object Tracking Precision
-      + ![](MOTP.png)
+      + ![](image/MOTP.png)
     + MT(Most Tracked Target): tính từ 80% video -> hết.[link](https://github.com/cheind/py-motmetrics)
     + PT(partially_tracked): Tính từ 20% - 80% video.
     + ML(Most Lost Target): Tính từ đầu đến 20% video.
     + Frag: tổng số lần đối tượng bị phân mảnh.
     + Hz: tốc độ tracking.
     + Công thức :
-      + ![](metrics.png)
+      + ![](image/metrics.png)
 
 + **Cách đánh giá**
   + Đánh giá dựa trên GroundTruth data. But only some data have GT label.MOT15, MOT16, MOT17, MOT20, ..almost is person.
@@ -124,7 +124,7 @@ sau đó lấy ra phương án tối ưu là vị trí chứa các phần tử 0
    2. Output: [[x1,y1,x2,y2,id1],[x1,y1,x2,y2,id2],...]
 
 Mô hình :
-![Mô hình SORT ](mo_hinh_sort.png)
+![Mô hình SORT ](image/mo_hinh_sort.png)
 
 # Some good resource for tracking
 ## Comparing
