@@ -163,5 +163,5 @@ những detection tiếp theo. Để giảm ID switch và Fragment track. [link]
 [paper](mot_sort/2103.04147.pdf)
 + Thêm ý tưởng những track mới bị tắt ngẵn time_since_update <= 2 nếu kết hợp với detections mới thì phải có ngưỡng IoU 
 cao hơn bình thường (0.15-case error 1) [link](https://github.com/Vuong02011996/MOT_tracking/blob/2f5a39415663912eb8d04f7fb25110a6969c7326/mot_sort/hungrary_linear_assignment.py#L85)
-  
++ And more ...
 
